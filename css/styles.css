@@ -205,3 +205,18 @@ footer {
     margin: 0 auto;
     border-radius: 10px;
 }
+
+section p {
+    font-size: 16px;
+    text-align: center;
+}
+
+.video-link {
+    color: #012fff;
+    text-decoration: none;
+    font-weight: 600;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+}
