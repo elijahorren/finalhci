@@ -1,0 +1,125 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../images/bg1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+
+.gameContent {
+    width: 80%;
+    max-width: 1200px;
+    background-color: white;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+}
+
+.timer {
+    font-size: 1em;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.gameHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    padding: 10px 20px;
+}
+
+.timerContainer {
+    font-size: 0.9em;
+}
+
+.cardsContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.card {
+    aspect-ratio: 3/4;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    transition: all 400ms ease;
+    transform-style: preserve-3d;
+    background-color: #ccc;
+}
+
+.face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    border: 5px solid #00b5cc;
+    border-radius: 5px;
+    transition: all 400ms ease;
+}
+
+.front {
+    transform: rotateY(180deg);
+}
+
+.back {
+    background-image: url('../images/back2.png');
+    backface-visibility: hidden;
+}
+
+.reveal-card {
+  transform: rotateY(180deg);
+}
+
+.disabled-card {
+  filter: grayscale(1);
+  opacity: 0.5;
+}
+
+.restartButton {
+  background-color: gray;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1em;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.restartButton:hover {
+  background-color: lightgray;
+}
+
+@media screen and (max-width: 920px) {
+  .grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}

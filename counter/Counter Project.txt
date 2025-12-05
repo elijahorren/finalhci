@@ -1,0 +1,15 @@
+Eli & Martin's Counter
+
+This project is a simple counter app. The user can increase or decrease the number by 1 or 10, or reset it back to zero.
+
+Design principles used:
+- Simplicity: only the buttons needed are shown.
+- Consistency: buttons look and work the same way.
+- Feedback: the number changes right away when a button is clicked.
+- Accessibility: clear text and easy to click buttons.
+
+How they were applied:
+The layout is clean with the counter number shown at the top and all buttons grouped together. Each button has simple text so users know what it does.
+
+Why these were chosen:
+To make the counter easy to understand, quick to use, and accessible for everyone. The design avoids confusion and gives a smooth user experience.

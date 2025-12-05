@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./CSS/styles.css">
+  <title>Eli & Martin's Counter</title>
+
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Eli & Martin's Counter</h1>
+      <p id="value" class="value">0</p>
+      <div class="row">
+        <button id="increase">Increase Count By 1</button>
+        <button id="decrease">Decrease Count by 1</button>
+        <button id="increase10">Increase Count By 10</button>
+        <button id="decrease10">Decrease Count by 10</button>
+        <button id="reset">Reset Count</button>
+      </div>
+      <p class="hint">Click a button to increase or decrease the number.</p>
+    </div>
+  </div>
+  <script>
+    let count = 0;
+
+    const value = document.getElementById("value");
+    const decreaseBtn = document.getElementById("decrease");
+    const resetBtn = document.getElementById("reset");
+    const increaseBtn = document.getElementById("increase");
+    const decrease10Btn = document.getElementById("decrease10");
+    const increase10Btn = document.getElementById("increase10");
+
+    decreaseBtn.addEventListener("click", function() {
+      count = count - 1;
+      value.textContent = count;
+    });
+
+    resetBtn.addEventListener("click", function() {
+      count = 0;
+      value.textContent = count;
+    });
+
+    increaseBtn.addEventListener("click", function() {
+      count = count + 1;
+      value.textContent = count;
+    });
+
+    decrease10Btn.addEventListener("click", function() {
+      count = count - 10;
+      value.textContent = count;
+    });
+
+    increase10Btn.addEventListener("click", function() {
+      count = count + 10;
+      value.textContent = count;
+    });
+  </script>
+</body>
+</html>

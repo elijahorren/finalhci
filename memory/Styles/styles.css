@@ -1,0 +1,62 @@
+body {
+    background-color: #ffffff;
+}
+
+
+.header {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Fredoka One', sans-serif;
+    text-align: center;
+    font-size: 3em;
+    color: #333;
+}
+
+.header img {
+    max-width: 200px;
+}
+
+.header h1 {
+    font-size: 36px;
+}
+
+.input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 50%;
+    font-family: 'Fredoka One', sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 10px;
+    color: #333;
+}
+
+.playButton {
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    font-family: 'Fredoka One', sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 10px;
+    color: #333;
+    cursor: pointer;
+}
+
+.playButton:disabled {
+    background-color: lightgray;
+    cursor: not-allowed;
+}
+
+.playButton:enabled:hover {
+    background-color: lightblue;
+}

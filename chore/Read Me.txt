@@ -1,0 +1,14 @@
+Elijah and Martin redesign
+What design principles, concepts, and theories did you use?
+We used Attention (focus and distraction)
+
+
+How did you apply them in your redesign?
+We made a message that lets the user know which doors are still closed and if all doors are open it will also let the user knwo by just the click of a button.
+Why did you choose these principles, and how do they improve UX?
+It will help us guide users when they first play the game, if they dont undertand the game really well they can click the button and see which doors are left to open.
+For example, what do you assume about the users?
+We are trying to make the game as age friendly as possible.
+
+For example, what problems are you solving?
+Very young people and old people playing the game sometimes might need a little help. 

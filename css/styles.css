@@ -1,0 +1,207 @@
+body {
+    margin: 0;
+    font-family: "IBM Plex Sans", sans-serif;
+    background: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background: #8b9ef3;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: #333;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background: #575757;
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+
+h2 {
+    text-align: center;
+    color: #012fff;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.concept-item {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.labs-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.lab summary {
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.lab-frame {
+    width: 100%;
+    height: 300px;
+    border: 2px solid #012fff;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.project-item {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+#thanks p {
+    text-align: center;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+#progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5px;
+    background: #ffcc00;
+    width: 0%;
+    z-index: 9999;
+}
+
+.topic-list {
+    list-style-type: disc;
+    margin-left: 20px;
+    text-align: left;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.list-title {
+    font-weight: 600;
+    font-size: 17px;
+    margin-bottom: 5px;
+    color: #012fff;
+
+
+}
+
+.simple-btn {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 600;
+    padding: 10px 20px;
+    background-color: #012fff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.simple-btn:hover {
+    background-color: #001bbf;
+}
+
+.outline-btn {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 600;
+    padding: 10px 20px;
+    background: transparent;
+    border: 2px solid #012fff;
+    color: #012fff;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.outline-btn:hover {
+    background: #012fff;
+    color: white;
+}
+
+#labs {
+    text-align: center;
+}
+
+#overview p {
+    text-align: center;
+
+
+}
+
+#openAll,
+#closeAll {
+    margin-bottom: 20px;
+}
+
+.video {
+    width: 100%;
+    max-width: 900px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
